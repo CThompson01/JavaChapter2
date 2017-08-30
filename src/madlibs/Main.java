@@ -3,7 +3,11 @@ package madlibs;
 import javax.swing.JOptionPane;
 
 public class Main {
-
+	
+	/**
+	 * Creates a message box that shows the story with the inputs of the user
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		JOptionPane.showMessageDialog(null, "There once was a " + 
 		input("Please input an adjective", "red") + " " +
@@ -21,6 +25,12 @@ public class Main {
 		" thing in existance."); 
 	}
 	
+	/**
+	 * Creates a dialog box that asks for input of a specific thing
+	 * @param message The item that is needed for input
+	 * @param defaultAnswer The default answer being displayed in the input box
+	 * @return Returns the input of the dialog box and adds it to the story
+	 */
 	private static String input(String message, String defaultAnswer) {
 		return JOptionPane.showInputDialog(message, defaultAnswer);
 	}
