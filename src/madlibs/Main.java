@@ -3,7 +3,6 @@ package madlibs;
 import javax.swing.JOptionPane;
 
 public class Main {
-	
 	/**
 	 * Creates a message box that shows the story with the inputs of the user
 	 * @param args
@@ -34,5 +33,4 @@ public class Main {
 	private static String input(String message, String defaultAnswer) {
 		return JOptionPane.showInputDialog(message, defaultAnswer);
 	}
-
 }
