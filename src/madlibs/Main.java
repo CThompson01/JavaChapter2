@@ -42,7 +42,7 @@ public class Main {
 	 */
 	private static int inputint(String message, String defaultAnswer) {
 		int a = Integer.parseInt(JOptionPane.showInputDialog(message, defaultAnswer));
-		int b = (int)(Math.random() * 100);
+		int b = Integer.parseInt(JOptionPane.showInputDialog(message, defaultAnswer));
 		int c = a - b;
 		return c;
 	}
