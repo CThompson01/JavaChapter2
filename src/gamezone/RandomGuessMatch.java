@@ -13,7 +13,7 @@ public class RandomGuessMatch {
 			JOptionPane.showMessageDialog(null, "You guessed right! \nThe number was " + randomNum);
 		} else {
 			JOptionPane.showMessageDialog(null, "You guessed wrong. \nThe number was " + randomNum +
-												"\nThe difference: " + (randomNum - guess));
+												"\nThe difference: " + Math.abs(randomNum - guess));
 		}
 	}
 }
